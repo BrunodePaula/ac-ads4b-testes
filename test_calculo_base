@@ -1,0 +1,6 @@
+from DeduzirDependentes import deduzir_dependentes
+import pytest
+
+@pytest.mark.parametrize('salario, qtd_dependentes, expected', [(3000, 2, 2339.18)])
+def test_calcula(salario, qtd_dependentes, expected):
+    assert deduzir_dependentes(salario, qntd_dependentes) == expected
